@@ -1,0 +1,10 @@
+<div class="main">
+  <div class="img"><h1>THƯ VIỆN</h1></div>
+
+  <div class="list-img">
+    <div class="item" *ngFor="let api of Api">
+      <img [src]="api.img" alt="" />
+      <strong>{{ api.name }} - {{ api.type_tour }}</strong>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,126 @@
+<div class="container mt-4">
+  <div class="card">
+    <h1>Nhập thông tin</h1>
+
+    <form class="label">
+      <div class="form-group">
+        <label> Tên Tour</label>
+        <input
+          type="text"
+          [(ngModel)]="name"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="name"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Thời gian</label>
+        <input
+          type="text"
+          [(ngModel)]="time"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="time"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Giá Tour</label>
+        <input
+          type="text"
+          [(ngModel)]="price"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="price"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Phương Tiện</label>
+        <input
+          type="text"
+          [(ngModel)]="vehcel"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="vehcel"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Kiểu Tour</label>
+        <input
+          type="text"
+          [(ngModel)]="type_tour"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="type_tour"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Ảnh Tour</label>
+        <input
+          type="text"
+          [(ngModel)]="img"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="img"
+          placeholder="..."
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-4" (click)="save()">
+        Lưu
+      </button>
+    </form>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Danh sách</h1>
+    <table class="table">
+      <thead class="th">
+        <h1 *ngIf="!isResultLoaded">Đang tải.................</h1>
+        <tr>
+          <th scope="col">Tên Tour</th>
+          <th scope="col">Thời Gian</th>
+          <th scope="col">Giá</th>
+          <th scope="col">Phương Tiện</th>
+          <th scope="col">Kiểu Tour</th>
+          <th scope="col">Ảnh Tour</th>
+        </tr>
+      </thead>
+      <tbody class="tb">
+        <tr *ngFor="let StudentItem of StudentArray">
+          <td>{{ StudentItem.name }}</td>
+          <td>{{ StudentItem.time }}</td>
+          <td>{{ StudentItem.price }}</td>
+          <td>{{ StudentItem.vehcel }}</td>
+          <td>{{ StudentItem.type_tour }}</td>
+          <td><img [src]="StudentItem.img" alt="" /></td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-success"
+              (click)="setUpdate(StudentItem)"
+            >
+              Sửa
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="setDelete(StudentItem)"
+            >
+              Xóa
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

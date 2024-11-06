@@ -1,0 +1,45 @@
+.main {
+  .img {
+    background-image: url("https://www.vietnamtravelgroup.com.vn/datafiles/32985/upload/files/banner2.png");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 35%;
+      font-size: 5rem;
+      font-family: "Josefin Sans", serif;
+    }
+  }
+
+  .content {
+    h1,
+    h2 {
+      color: rgb(0, 208, 255);
+      text-align: center;
+    }
+    h2 {
+      color: rgba(0, 0, 0, 0.61);
+    }
+
+    .content-item {
+      padding: 10px 100px;
+
+      strong {
+        font-size: 1.5rem;
+      }
+      span {
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.695);
+      }
+      ul,
+      li {
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.695);
+      }
+    }
+  }
+}

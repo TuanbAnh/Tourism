@@ -1,0 +1,60 @@
+<div class="main">
+  <img
+    src="https://www.vietnamtravelgroup.com.vn/image-process/get-image-v3?path=/datafiles/32985/upload/images/banner/Banner%20Tour3Mien%20WebTrong%20JPEG.jpg&width=0"
+    alt=""
+  />
+
+  <div class="list">
+    <div class="left">
+      <div class="items" *ngFor="let api of Api">
+        <img class="img" [src]="api.img" alt="" />
+        <div class="item">
+          <h3>{{ api.name }}</h3>
+          <div class="child">
+            <div><i class="fa-solid fa-clock"></i>{{ api.time }}</div>
+            <strong>{{ api.price | number : "1.0-0" }} vnd</strong>
+          </div>
+          <div class="child">
+            <div><i class="fa-solid fa-truck-plane"></i>{{ api.vehcel }}</div>
+            <strong
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="items">
+        <img
+          src="https://www.vietnamtravelgroup.com.vn/datafiles/32985/upload/files/tra/4-16947000389441661210219.jpg?t=1729046507"
+          alt=""
+        />
+        <h3>KHÁM PHÁ VẺ ĐẸP MÙA THU: TOP 5 ĐỊA ĐIỂM ĐẸP</h3>
+      </div>
+      <div class="items">
+        <img
+          src="https://www.vietnamtravelgroup.com.vn/datafiles/32985/upload/files/tra/z5956119825574_7282c97e6e28cf750a7b4d53d55eadc0.jpg?t=1729587354"
+          alt=""
+        />
+        <h3>VIETNAM TRAVEL GROUP THAM DỰ SỰ KIỆN ITB CHÂU Á</h3>
+      </div>
+
+      <div class="items">
+        <img
+          src="https://www.vietnamtravelgroup.com.vn/datafiles/32985/upload/files/tra/tuyet-roi-o-sapa.jpg?t=1730686449"
+          alt=""
+        />
+        <h3>TÓP 10 ĐỊA ĐIỂM DU LỊCH MÙA ĐÔNG VIỆT NAM</h3>
+      </div>
+      <div class="items">
+        <img
+          src="https://www.vietnamtravelgroup.com.vn/datafiles/32985/upload/files/tra/15-hinh-nen-mua-thu-cho-dien-thoai-31-16-33-47.jpg?t=1728531379"
+          alt=""
+        />
+        <h3>RỰC RỠ SẮC THU - KHÁM PHÁ MÙA THU HÀ NỘI CÙNG VIETNAM</h3>
+      </div>
+    </div>
+  </div>
+</div>

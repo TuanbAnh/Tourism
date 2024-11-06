@@ -1,0 +1,71 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.list {
+  display: flex;
+  transition: left 1s ease;
+  position: relative;
+}
+
+.item {
+  flex-shrink: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 450px;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: rgba(215, 208, 208, 0.34);
+  border: 1px dotted #fff;
+}
+button:hover {
+  background-color: rgba(196, 191, 191, 0.636);
+}
+.fa-solid {
+  color: blue;
+  font-size: 20px;
+}
+.buttons button:first-child {
+  margin-left: 20px;
+}
+.buttons button:last-child {
+  margin-right: 20px;
+}
+
+.dots {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgb(103, 98, 98);
+  cursor: pointer;
+}
+
+.dots li.active {
+  background-color: white;
+}

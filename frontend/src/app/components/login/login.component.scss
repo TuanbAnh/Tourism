@@ -1,0 +1,72 @@
+/* From Uiverse.io by HoseinParvaresh */
+::selection {
+  //   background-color: gray;
+}
+
+.container {
+  background-image: url(https://mega.com.vn/media/news/0106_hinh-nen-4k-may-tinh7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  border: 1px solid #000;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(to bottom, #2e2d2db8, #21212178);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.title {
+  color: white;
+  margin: 3rem 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.input {
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  width: 20rem;
+  background-color: inherit;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(162, 161, 158);
+  transition: all 400ms;
+}
+.input:hover {
+  background-color: #837e7e;
+  border: none;
+  border-radius: 0.5rem;
+}
+.btn {
+  height: 3rem;
+  width: 20rem;
+  margin-top: 3rem;
+  background-color: wheat;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 400ms;
+  cursor: pointer;
+  box-shadow: 0 0 10px antiquewhite, 0 0 10px antiquewhite;
+}
+.btn:hover {
+  background-color: antiquewhite;
+  box-shadow: none;
+}
